@@ -1,0 +1,26 @@
+{
+  "name": "handsontable",
+  "version": "0.10.0-beta3",
+  "main": [
+    "./dist/jquery.handsontable.full.js",
+    "./dist/jquery.handsontable.full.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.0"
+  },
+  "homepage": "https://github.com/warpech/jquery-handsontable",
+  "_release": "0.10.0-beta3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.10.0-beta3",
+    "commit": "ef45887713e4728e361e103a90f0e9428bd8b82b"
+  },
+  "_source": "git://github.com/warpech/jquery-handsontable.git",
+  "_target": ">=0.10.0-beta3",
+  "_originalSource": "handsontable"
+}
