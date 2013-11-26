@@ -39,7 +39,7 @@
   },
   {
     "date": "2013-11-26",
-    "recommendation": "<ul><li>Use current versions of Polymer, Polymer UI, Polymer UI Elements and &lt;x-html&gt; installed via Bower.<li>Use current version of Chrome Dev channel (Web Platform features enabled) or Chrome Canary (Web Platform features disabled)</ul>",
+    "recommendation": "<ul><li>Use current versions of Polymer, Polymer UI, Polymer UI Elements and &lt;x-html&gt; installed via Bower.<li>Use current version of Chrome Dev channel (Web Platform features enabled)</ul>",
     "statuses": [
       {
         "project": "polymer-ui-elements",
@@ -54,6 +54,22 @@
         "project_version": "0.0.20131108",
         "browser": "Chrome Canary, Web Platform features disabled",
         "browser_version": "33.0.1720.0 canary",
+        "status": "red",
+        "comment": "Polymer UI Menu appears unstyled since 33.0.1720.0 canary"
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.0.20131108",
+        "browser": "Chrome Dev, Web Platform features enabled",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.0.20131108",
+        "browser": "Chrome Dev, Web Platform features disabled",
+        "browser_version": "33.0.1707.0 m",
         "status": "green",
         "comment": ""
       },
