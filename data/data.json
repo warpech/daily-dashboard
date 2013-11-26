@@ -45,7 +45,7 @@
         "browser": "Chrome Canary, Web Plaform features enabled",
         "browser_version": "33.0.1719.0 canary",
         "status": "red",
-        "comment": "Won't work with Polymer v0.0.20131107 but should work in next version of Polymer when changes from <a href='https://github.com/Polymer/HTMLImports/issues/40'>HTMLImports#40</a> are done"
+        "comment": "Fail since 22.11.2013. <br>Won't work with Polymer v0.0.20131107 but should work in next version of Polymer when changes from <a href='https://github.com/Polymer/HTMLImports/issues/40'>HTMLImports#40</a> are done"
       },
       {
         "project": "x-html",
