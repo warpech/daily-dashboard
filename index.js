@@ -3,7 +3,12 @@ $(function () {
     var url = '';
     switch (value) {
       case 'x-html':
-        url = 'https://github.com/PuppetJs/x-html';
+//        url = 'https://github.com/PuppetJs/x-html';
+        url = 'http://puppetjs.github.io/x-html/examples/index.html';
+        break;
+
+      case 'polymer-ui-menu':
+        url = 'http://www.polymer-project.org/polymer-all/polymer-ui-elements/polymer-ui-menu/index.html';
         break;
     }
 
@@ -19,7 +24,7 @@ $(function () {
 
       case 'yellow':
         TD.style.backgroundColor = 'yellow';
-        Handsontable.Dom.fastInnerHTML(TD, 'Known problems');
+        Handsontable.Dom.fastInnerHTML(TD, 'Works with workaround');
         break;
 
       case 'red':
@@ -89,6 +94,7 @@ $(function () {
 
   function renderIndex(index) {
     $("#hot").handsontable('loadData', data[index].statuses);
+    $("#recommendation").html(data[index].recommendation || '');
     $("#currentDate").text(dateToHumanDate(data[index].date));
     if (currentIndex === 0) {
       $('#prevDate').attr("disabled", "disabled");
