@@ -35,5 +35,42 @@
         "comment": ""
       }
     ]
+  },
+  {
+    "date": "2013-11-26",
+    "statuses": [
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131118",
+        "browser": "Chrome Canary, Web Plaform features enabled",
+        "browser_version": "33.0.1718.0 canary",
+        "status": "red",
+        "comment": "Won't work with Polymer v0.0.20131107 but should work in next version of Polymer when changes from <a href='https://github.com/Polymer/HTMLImports/issues/40'>HTMLImports#40</a> are done"
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131118",
+        "browser": "Chrome Canary, Web Plaform features disabled",
+        "browser_version": "33.0.1718.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131118",
+        "browser": "Chrome Dev, Web Plaform features enabled",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131118",
+        "browser": "Chrome Dev, Web Plaform features disabled",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      }
+    ]
   }
 ]

@@ -29,6 +29,10 @@ $(function () {
     }
   }
 
+  function htmlRenderer(instance, TD, row, col, prop, value, cellProperties) {
+    TD.innerHTML = value;
+  }
+
   function dateToHumanDate(input) {
     input = input.split('-');
     var y = input[0];
@@ -65,14 +69,17 @@ $(function () {
       },
       {
         title: "Comment",
-        data: "comment"
+        data: "comment",
+        width: 330,
+        renderer: htmlRenderer
       }
     ]
   });
 
   $.get("data/data.json", function (response) {
-    $("#hot").handsontable('loadData', response[0].statuses);
-    $("h2").text(dateToHumanDate(response[0].date))
-    $("#lastUpdate").text(dateToHumanDate(response[0].date))
+    var last = response.length - 1;
+    $("#hot").handsontable('loadData', response[last].statuses);
+    $("h2").text(dateToHumanDate(response[last].date))
+    $("#lastUpdate").text(dateToHumanDate(response[last].date))
   })
 });
