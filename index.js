@@ -76,10 +76,41 @@ $(function () {
     ]
   });
 
+  var lastIndex = 0;
+  var currentIndex = 0;
+  var data;
   $.get("data/data.json", function (response) {
-    var last = response.length - 1;
-    $("#hot").handsontable('loadData', response[last].statuses);
-    $("h2").text(dateToHumanDate(response[last].date))
-    $("#lastUpdate").text(dateToHumanDate(response[last].date))
-  })
+    data = response;
+    lastIndex = data.length - 1;
+    currentIndex = lastIndex;
+    renderIndex(currentIndex);
+    $("#lastUpdate").text(dateToHumanDate(data[lastIndex].date));
+  });
+
+  function renderIndex(index) {
+    $("#hot").handsontable('loadData', data[index].statuses);
+    $("#currentDate").text(dateToHumanDate(data[index].date));
+    if (currentIndex === 0) {
+      $('#prevDate').attr("disabled", "disabled");
+    }
+    else {
+      $('#prevDate').removeAttr("disabled");
+    }
+    if (currentIndex === lastIndex) {
+      $('#nextDate').attr("disabled", "disabled");
+    }
+    else {
+      $('#nextDate').removeAttr("disabled");
+    }
+  }
+
+  $('#prevDate').click(function () {
+    currentIndex--;
+    renderIndex(currentIndex);
+  });
+
+  $('#nextDate').click(function () {
+    currentIndex++;
+    renderIndex(currentIndex);
+  });
 });

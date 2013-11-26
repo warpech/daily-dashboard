@@ -16,19 +16,17 @@
       color: #000;
     }
 
-    .links a {
-      color: white;
-      background-color: cornflowerblue;
-      padding: 2px;
+    .links {
+      color: #444;
       font-size: 95%;
     }
 
     a {
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -38,13 +36,13 @@
 
 <p class="links">Daily links:
 
-  <a href="http://peter.sh/category/last-week/">Last Week in Chromium</a>
-  <a href="https://groups.google.com/forum/#!forum/polymer-dev">Polymer Dev</a>
+  <a href="http://peter.sh/category/last-week/">Last Week in Chromium</a> |
+  <a href="https://groups.google.com/forum/#!forum/polymer-dev">Polymer Dev</a> |
   <a href="https://groups.google.com/forum/#!forum/polymer-announce">Polymer Announce</a>
 
 </p>
 
-<h2></h2>
+<h2><button id="prevDate">&lt;&lt;</button><span id="currentDate"></span><button id="nextDate">&gt;&gt;</button></h2>
 
 <div id="hot"></div>
 
