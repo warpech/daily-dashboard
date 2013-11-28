@@ -12,7 +12,8 @@ $(function () {
         break;
     }
 
-    Handsontable.Dom.fastInnerHTML(TD, '<a href="' + url + '">' + value + '</a>');
+    value = '<a href="' + url + '">' + value + '</a>';
+    htmlRenderer.apply(this, arguments);
   }
 
   function statusRenderer(instance, TD, row, col, prop, value, cellProperties) {
@@ -34,8 +35,63 @@ $(function () {
     }
   }
 
+  function recommendationRenderer(instance, TD, row, col, prop, value, cellProperties) {
+    var browserRecommendation = browserGecommendation(instance.getData(), instance.getDataAtRow(row).browser);
+    switch (browserRecommendation) {
+      case 'red':
+        TD.style.backgroundColor = 'PeachPuff';
+        break;
+
+      case 'yellow':
+        TD.style.backgroundColor = '#FFFF99';
+        break;
+
+      case 'green':
+        TD.style.backgroundColor = 'lightgreen';
+        break;
+    }
+    Handsontable.cellLookup.renderer.text.apply(this, arguments);
+  }
+
+  function browserGecommendation(data, browser) {
+    var scores = {
+      red: 0,
+      yellow: 0,
+      green: 0
+    }
+    for (var i = 0, ilen = data.length; i < ilen; i++) {
+      if (data[i].browser === browser) {
+        scores[data[i].status]++;
+      }
+    }
+    if (scores.red) {
+      return "red";
+    }
+    else if (scores.yellow) {
+      return "yellow";
+    }
+    else if (scores.green) {
+      return "green";
+    }
+  }
+
+  function greenBrowsers(data) {
+    var out = [];
+    var checked = {};
+    for (var i = 0, ilen = data.length; i < ilen; i++) {
+      if (!checked[data[i].browser]) {
+        checked[data[i].browser] = true;
+        if (browserGecommendation(data, data[i].browser) === 'green') {
+          out.push(data[i].browser);
+        }
+      }
+    }
+    return out;
+  }
+
   function htmlRenderer(instance, TD, row, col, prop, value, cellProperties) {
-    TD.innerHTML = value;
+    recommendationRenderer.apply(this, arguments);
+    Handsontable.Dom.fastInnerHTML(TD, value);
   }
 
   function dateToHumanDate(input) {
@@ -49,6 +105,7 @@ $(function () {
   $("#hot").handsontable({
     readOnly: true,
     data: [],
+    renderer: recommendationRenderer,
     columns: [
       {
         title: "Project",
@@ -96,6 +153,7 @@ $(function () {
     $("#hot").handsontable('loadData', data[index].statuses);
     $("#recommendation").html(data[index].recommendation || '');
     $("#currentDate").text(dateToHumanDate(data[index].date));
+    $("#greenBrowsers").text(greenBrowsers(data[index].statuses).join(', ') || "none");
     if (currentIndex === 0) {
       $('#prevDate').attr("disabled", "disabled");
     }
