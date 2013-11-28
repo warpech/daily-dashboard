@@ -1,7 +1,7 @@
 [
   {
     "date": "2013-11-25",
-    "recommendation": "<ul><li>Use current versions of Polymer, Polymer UI, Polymer UI Elements and &lt;x-html&gt; installed via Bower.<li>Use current version of Chrome Dev channel (Web Platform features enabled) or Chrome Canary (Web Platform features disabled)</ul>",
+    "recommendation": "<ul><li>Use current versions of Polymer, Polymer UI, Polymer UI Elements and &lt;x-html&gt; installed via Bower.</ul>",
     "statuses": [
       {
         "project": "x-html",
@@ -39,7 +39,7 @@
   },
   {
     "date": "2013-11-26",
-    "recommendation": "<ul><li>Use current versions of Polymer, Polymer UI, Polymer UI Elements and &lt;x-html&gt; installed via Bower.<li>Use current version of Chrome Dev channel (Web Platform features enabled)</ul>",
+    "recommendation": "<ul><li>Use current versions of Polymer, Polymer UI, Polymer UI Elements and &lt;x-html&gt; installed via Bower.</ul>",
     "statuses": [
       {
         "project": "polymer-ui-elements",
@@ -109,7 +109,7 @@
   },
   {
     "date": "2013-11-28",
-    "recommendation": "<ul><li>Polymer is going through reorganisation due to new version 0.1.0. For the time being, use versions of Polymer (x-html/examples/polymer.min.js), Polymer UI, Polymer UI Elements and &lt;x-html&gt; available in &lt;x-html&gt; repo.<li>Use current version of Chrome Dev channel (Web Platform features enabled)</ul>",
+    "recommendation": "<ul><li>Polymer is going through reorganisation due to new version 0.1.0. For the time being, use versions of Polymer (x-html/examples/polymer.min.js), Polymer UI, Polymer UI Elements and &lt;x-html&gt; available in &lt;x-html&gt; repo.</ul>",
     "statuses": [
       {
         "project": "polymer-ui-elements",
