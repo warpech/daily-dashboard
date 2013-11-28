@@ -7,7 +7,7 @@ $(function () {
         url = 'http://puppetjs.github.io/x-html/examples/index.html';
         break;
 
-      case 'polymer-ui-menu':
+      case 'polymer-ui-elements':
         url = 'http://www.polymer-project.org/polymer-all/polymer-ui-elements/polymer-ui-menu/index.html';
         break;
     }
