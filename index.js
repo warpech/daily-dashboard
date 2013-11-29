@@ -9,6 +9,14 @@ $(function () {
       case 'polymer-ui-elements':
         url = 'http://www.polymer-project.org/polymer-all/polymer-ui-elements/polymer-ui-menu/index.html';
         break;
+
+      case 'PMail':
+        url = 'https://github.com/warpech/PMail';
+        break;
+
+      case 'Handsontable':
+        url = 'http://handsontable.com/demo/web_component.html';
+        break;
     }
 
     value = '<a href="' + url + '">' + value + '</a><br><small>' + instance.getDataAtRow(row).project_version + '</small>';
