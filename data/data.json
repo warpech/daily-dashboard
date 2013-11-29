@@ -43,7 +43,7 @@
     "statuses": [
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features enabled)",
         "browser_version": "33.0.1720.0 canary",
         "status": "red",
@@ -51,7 +51,7 @@
       },
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1720.0 canary",
         "status": "red",
@@ -59,7 +59,7 @@
       },
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Dev (Web Platform features enabled)",
         "browser_version": "33.0.1707.0 m",
         "status": "green",
@@ -67,7 +67,7 @@
       },
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1707.0 m",
         "status": "green",
@@ -113,7 +113,7 @@
     "statuses": [
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features enabled)",
         "browser_version": "33.0.1722.0 canary",
         "status": "green",
@@ -121,7 +121,7 @@
       },
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1722.0 canary",
         "status": "red",
@@ -129,7 +129,7 @@
       },
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Dev (Web Platform features enabled)",
         "browser_version": "33.0.1707.0 m",
         "status": "green",
@@ -137,7 +137,7 @@
       },
       {
         "project": "polymer-ui-elements",
-        "project_version": "0.0.20131108",
+        "project_version": "0.0.20131107",
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1707.0 m",
         "status": "green",
