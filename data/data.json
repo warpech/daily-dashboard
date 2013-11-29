@@ -208,5 +208,139 @@
         "comment": "this.model.Send$ does not work (Cannot set property 'Send$' of undefined)"
       }
     ]
+  },
+  {
+    "date": "2013-11-29",
+    "recommendation": "<ul><li>Polymer is going through reorganisation due to new version 0.1.0. For the time being, use versions of Polymer (x-html/examples/polymer.min.js), Polymer UI, Polymer UI Elements and &lt;x-html&gt; available in &lt;x-html&gt; repo.</ul>",
+    "statuses": [
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.0.20131107",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.0.20131107",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "red",
+        "comment": "Polymer UI Menu appears unstyled since 33.0.1720.0 canary"
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.0.20131107",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.0.20131107",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131126",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "yellow",
+        "comment": "Problems since 22.11.2013. <br>Won't work with Polymer v0.0.20131107 but should work in next version of Polymer when changes from <a href='https://github.com/Polymer/HTMLImports/issues/40'>HTMLImports#40</a> are done <br>Temporary build of Polymer that works is bundled in x-html/examples/polymer.min.js"
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131126",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131126",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131126",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "PMail",
+        "project_version": "cc9ec6b",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "red",
+        "comment": "Polymer UI Elements appear unstyled"
+      },
+      {
+        "project": "PMail",
+        "project_version": "cc9ec6b",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "red",
+        "comment": "Polymer UI Elements appear unstyled"
+      },
+      {
+        "project": "PMail",
+        "project_version": "cc9ec6b",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "PMail",
+        "project_version": "cc9ec6b",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "red",
+        "comment": "this.model.Send$ does not work (Cannot set property 'Send$' of undefined)"
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "a829d15",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "a829d15",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "33.0.1723.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "a829d15",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "a829d15",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1707.0 m",
+        "status": "green",
+        "comment": ""
+      }
+    ]
   }
 ]
