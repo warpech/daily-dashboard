@@ -11,8 +11,12 @@ $(function () {
         break;
     }
 
-    value = '<a href="' + url + '">' + value + '</a>';
+    value = '<a href="' + url + '">' + value + '</a><br><small>' + instance.getDataAtRow(row).project_version + '</small>';
     htmlRenderer.apply(this, arguments);
+  }
+
+  function smallPrint(txt) {
+    return '<small>' + txt + '</small>';
   }
 
   function statusRenderer(instance, TD, row, col, prop, value, cellProperties) {
@@ -26,17 +30,17 @@ $(function () {
     switch (value.status) {
       case 'green':
         TD.style.backgroundColor = 'lightgreen';
-        Handsontable.Dom.fastInnerHTML(TD, 'OK ' + value.comment);
+        Handsontable.Dom.fastInnerHTML(TD, smallPrint('OK ') + value.comment);
         break;
 
       case 'yellow':
         TD.style.backgroundColor = '#FFFF99';
-        Handsontable.Dom.fastInnerHTML(TD, 'WORKS WITH WORKAROUND ' + value.comment);
+        Handsontable.Dom.fastInnerHTML(TD, smallPrint('WORKS WITH WORKAROUND ') + value.comment);
         break;
 
       case 'red':
         TD.style.backgroundColor = 'tomato';
-        Handsontable.Dom.fastInnerHTML(TD, 'FAIL ' + value.comment);
+        Handsontable.Dom.fastInnerHTML(TD, smallPrint('FAIL ') + value.comment);
         break;
 
       case 'white':
@@ -125,8 +129,15 @@ $(function () {
     var columnNames = [];
     var pivot = [];
     data.forEach(function (dataRow) {
-      if (columnNames.indexOf(dataRow.browser) === -1) {
-        columnNames.push(dataRow.browser);
+      var browserName = dataRow.browser + "<br><small>" + dataRow.browser_version + '</small>';
+      browserName = browserName.replace(/\./g, ',');
+
+      if (columnNames.indexOf(browserName) === -1) {
+        columnNames.push(browserName);
+        columns.push({
+          title: browserName.replace(/\,/g, '.'),
+          data: browserName
+        });
       }
 
       var pivotRow = pivot.filter(function (pivotRow) {
@@ -138,20 +149,14 @@ $(function () {
       else {
         pivotRow = {};
         pivotRow.project = dataRow.project;
+        pivotRow.project_version = dataRow.project_version;
         pivot.push(pivotRow);
       }
 
-      pivotRow[dataRow.browser] = {
+      pivotRow[browserName] = {
         status: dataRow.status,
         comment: dataRow.comment
       };
-    });
-
-    columnNames.forEach(function (columnName) {
-      columns.push({
-        title: columnName,
-        data: columnName
-      });
     });
 
     return pivot;
