@@ -116,16 +116,16 @@
         "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features enabled)",
         "browser_version": "33.0.1722.0 canary",
-        "status": "green",
-        "comment": ""
+        "status": "red",
+        "comment": "Polymer UI Menu appears unstyled since 33.0.1720.0 canary"
       },
       {
         "project": "polymer-ui-elements",
         "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1722.0 canary",
-        "status": "red",
-        "comment": "Polymer UI Menu appears unstyled since 33.0.1720.0 canary"
+        "status": "green",
+        "comment": ""
       },
       {
         "project": "polymer-ui-elements",
@@ -189,7 +189,7 @@
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1722.0 canary",
         "status": "red",
-        "comment": "Polymer UI Elements appear unstyled"
+        "comment": "this.model.Send$ does not work (Cannot set property 'Send$' of undefined)"
       },
       {
         "project": "PMail",
@@ -218,16 +218,16 @@
         "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features enabled)",
         "browser_version": "33.0.1723.0 canary",
-        "status": "green",
-        "comment": ""
+        "status": "red",
+        "comment": "Polymer UI Menu appears unstyled since 33.0.1720.0 canary"
       },
       {
         "project": "polymer-ui-elements",
         "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1723.0 canary",
-        "status": "red",
-        "comment": "Polymer UI Menu appears unstyled since 33.0.1720.0 canary"
+        "status": "green",
+        "comment": ""
       },
       {
         "project": "polymer-ui-elements",
@@ -291,7 +291,7 @@
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1723.0 canary",
         "status": "red",
-        "comment": "Polymer UI Elements appear unstyled"
+        "comment": "this.model.Send$ does not work (Cannot set property 'Send$' of undefined)"
       },
       {
         "project": "PMail",
