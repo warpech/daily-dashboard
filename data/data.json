@@ -360,8 +360,8 @@
         "project_version": "0.0.20131107",
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1723.0 canary",
-        "status": "green",
-        "comment": ""
+        "status": "red",
+        "comment": "Uncaught TypeError: Object #&lt;g&gt; has no method 'created'"
       },
       {
         "project": "polymer-ui-elements",
