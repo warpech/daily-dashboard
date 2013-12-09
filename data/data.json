@@ -501,15 +501,15 @@
         "project": "polymer-ui-elements",
         "project_version": "0.0.20131107",
         "browser": "Chrome Dev (Web Platform features enabled)",
-        "browser_version": "33.0.1707.0 m",
-        "status": "green",
-        "comment": ""
+        "browser_version": "33.0.1729.3 dev-m",
+        "status": "red",
+        "comment": "Polymer UI Menu appears unstyled"
       },
       {
         "project": "polymer-ui-elements",
         "project_version": "0.0.20131107",
         "browser": "Chrome Dev (Web Platform features disabled)",
-        "browser_version": "33.0.1707.0 m",
+        "browser_version": "33.0.1729.3 dev-m",
         "status": "green",
         "comment": ""
       },
@@ -533,15 +533,15 @@
         "project": "x-html",
         "project_version": "0.0.20131126",
         "browser": "Chrome Dev (Web Platform features enabled)",
-        "browser_version": "33.0.1707.0 m",
+        "browser_version": "33.0.1729.3 dev-m",
         "status": "green",
-        "comment": ""
+        "comment": "NOTE: Polymer UI elements appear unstyled (but that is not a problem in x-html)"
       },
       {
         "project": "x-html",
         "project_version": "0.0.20131126",
         "browser": "Chrome Dev (Web Platform features disabled)",
-        "browser_version": "33.0.1707.0 m",
+        "browser_version": "33.0.1729.3 dev-m",
         "status": "green",
         "comment": ""
       },
@@ -551,7 +551,7 @@
         "browser": "Chrome Canary (Web Platform features enabled)",
         "browser_version": "33.0.1731.1 canary SyzyASan",
         "status": "red",
-        "comment": "Polymer UI Elements appear unstyled"
+        "comment": "Polymer UI elements appear unstyled"
       },
       {
         "project": "PMail",
@@ -565,15 +565,15 @@
         "project": "PMail",
         "project_version": "cc9ec6b",
         "browser": "Chrome Dev (Web Platform features enabled)",
-        "browser_version": "33.0.1707.0 m",
-        "status": "green",
-        "comment": ""
+        "browser_version": "33.0.1729.3 dev-m",
+        "status": "red",
+        "comment": "Polymer UI elements appear unstyled"
       },
       {
         "project": "PMail",
         "project_version": "cc9ec6b",
         "browser": "Chrome Dev (Web Platform features disabled)",
-        "browser_version": "33.0.1707.0 m",
+        "browser_version": "33.0.1729.3 dev-m",
         "status": "red",
         "comment": "this.model.Send$ does not work (Cannot set property 'Send$' of undefined)"
       },
@@ -597,7 +597,7 @@
         "project": "Handsontable",
         "project_version": "a829d15",
         "browser": "Chrome Dev (Web Platform features enabled)",
-        "browser_version": "33.0.1707.0 m",
+        "browser_version": "33.0.1729.3 dev-m",
         "status": "green",
         "comment": ""
       },
@@ -605,9 +605,9 @@
         "project": "Handsontable",
         "project_version": "a829d15",
         "browser": "Chrome Dev (Web Platform features disabled)",
-        "browser_version": "33.0.1707.0 m",
-        "status": "green",
-        "comment": ""
+        "browser_version": "33.0.1729.3 dev-m",
+        "status": "red",
+        "comment": "Object #<g> has no method 'created' "
       }
     ]
   }
