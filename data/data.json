@@ -479,7 +479,7 @@
   },
   {
     "date": "2013-12-07",
-    "recommendation": "<ul><li>Polymer is going through reorganisation due to new version 0.1.0. For the time being, use versions of Polymer (x-html/examples/polymer.min.js), Polymer UI, Polymer UI Elements and &lt;x-html&gt; available in &lt;x-html&gt; repo.</ul>",
+    "recommendation": "<ul><li>All stopped working! Try Chrome stable channel (with Web Platform features flag enabled or disabled)</li><li>Polymer is going through reorganisation due to new version 0.1.0. For the time being, use versions of Polymer (x-html/examples/polymer.min.js), Polymer UI, Polymer UI Elements and &lt;x-html&gt; available in &lt;x-html&gt; repo.</ul>",
     "statuses": [
       {
         "project": "polymer-ui-elements",
