@@ -744,5 +744,139 @@
         "comment": "Object #&lt;g> has no method 'created' "
       }
     ]
+  },
+  {
+    "date": "2014-01-07",
+    "recommendation": "<ul><li>PuppetJS link catching stopped working in PMail (marked with <span style='background: yellow'>yellow</span> color). Problem discussed in the <a href='https://groups.google.com/forum/?fromgroups=#!topic/polymer-dev/fDRlCT7nNPU'>Google Group</a><li>Canary 34 has several Web Platform features (Custom Elements) enabled by default, cannot turn them off with a flag</ul>",
+    "statuses": [
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.1.1",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.1.1",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.1.1",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "polymer-ui-elements",
+        "project_version": "0.1.1",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "red",
+        "comment": "Visually looks ok, but &lt;polymer-ui-menu-item> doesn't respond to click event"
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131220",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131220",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131220",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "x-html",
+        "project_version": "0.0.20131220",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "red",
+        "comment": "Fails without an error message"
+      },
+      {
+        "project": "PMail",
+        "project_version": "master (Jan 07)",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "yellow",
+        "comment": "Functional but page is reloaded after each click in the menu"
+      },
+      {
+        "project": "PMail",
+        "project_version": "master (Jan 07)",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "yellow",
+        "comment": "Functional but page is reloaded after each click in the menu<br>Settings button shows up in main menu without a reason"
+      },
+      {
+        "project": "PMail",
+        "project_version": "master (Jan 07)",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "yellow",
+        "comment": "Functional but page is reloaded after each click in the menu<br>Settings button shows up in main menu without a reason"
+      },
+      {
+        "project": "PMail",
+        "project_version": "master (Jan 07)",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "red",
+        "comment": "&lt;x-html> content fails to show without error message"
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "0.10.0",
+        "browser": "Chrome Canary (Web Platform features enabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "0.10.0",
+        "browser": "Chrome Canary (Web Platform features disabled)",
+        "browser_version": "34.0.1771.0 canary",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "0.10.0",
+        "browser": "Chrome Dev (Web Platform features enabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "green",
+        "comment": ""
+      },
+      {
+        "project": "Handsontable",
+        "project_version": "0.10.0",
+        "browser": "Chrome Dev (Web Platform features disabled)",
+        "browser_version": "33.0.1750.5 dev-m",
+        "status": "red",
+        "comment": "Object #&lt;g> has no method 'created' "
+      }
+    ]
   }
 ]
