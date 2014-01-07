@@ -80,13 +80,13 @@ $(function () {
     }
   }
 
-  function greenBrowsers(data) {
+  function recommendedBrowsers(data, acceptedArr) {
     var out = [];
     var checked = {};
     for (var i = 0, ilen = data.length; i < ilen; i++) {
       if (!checked[data[i].browser]) {
         checked[data[i].browser] = true;
-        if (browserRecommendation(data, data[i].browser) === 'green') {
+        if (acceptedArr.indexOf(browserRecommendation(data, data[i].browser)) > -1) {
           out.push(data[i].browser);
         }
       }
@@ -187,7 +187,24 @@ $(function () {
 
     $("#recommendation").html(data[index].recommendation || '');
     $("#currentDate").text(dateToHumanDate(data[index].date));
-    $("#greenBrowsers").text(greenBrowsers(data[index].statuses).join(', ') || "none");
+
+    var rec = recommendedBrowsers(data[index].statuses, ["green"]);
+    if (rec.length) {
+      $("#recommendedBrowsers").text(rec.join(', '));
+      $("#recommendedBrowsersDesc").text("Recommended browsers (fully green column)");
+    }
+    else {
+      rec = recommendedBrowsers(data[index].statuses, ["green", "yellow"]);
+      if (rec.length) {
+        $("#recommendedBrowsers").text(rec.join(', '));
+        $("#recommendedBrowsersDesc").text("Not the worst experience in browsers (green & yellow column)");
+      }
+      else {
+        $("#recommendedBrowsers").text('none');
+        $("#recommendedBrowsersDesc").text("Recommended browsers (fully green column)");
+      }
+    }
+
     if (currentIndex === 0) {
       $('#prevDate').attr("disabled", "disabled");
     }
