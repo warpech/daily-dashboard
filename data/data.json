@@ -527,7 +527,7 @@
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1731.1 canary SyzyASan",
         "status": "red",
-        "comment": "Since 09.12.2013 Polymer example shows error Object #<g> has no method 'created' "
+        "comment": "Since 09.12.2013 Polymer example shows error Object #&lt;g> has no method 'created' "
       },
       {
         "project": "x-html",
@@ -607,7 +607,7 @@
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1729.3 dev-m",
         "status": "red",
-        "comment": "Object #<g> has no method 'created' "
+        "comment": "Object #&lt;g> has no method 'created' "
       }
     ]
   },
@@ -629,7 +629,7 @@
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1734.0 canary",
         "status": "red",
-        "comment": "Polymer demo shows TypeError: Object #<g> has no method 'registerWhenReady'"
+        "comment": "Polymer demo shows TypeError: Object #&lt;g> has no method 'registerWhenReady'"
       },
       {
         "project": "polymer-ui-elements",
@@ -645,7 +645,7 @@
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1729.3 dev-m",
         "status": "red",
-        "comment": "Polymer demo shows TypeError: Object #<g> has no method 'registerWhenReady'"
+        "comment": "Polymer demo shows TypeError: Object #&lt;g> has no method 'registerWhenReady'"
       },
       {
         "project": "x-html",
@@ -661,7 +661,7 @@
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1734.0 canary",
         "status": "red",
-        "comment": "Polymer demo shows TypeError: Object #<g> has no method 'registerWhenReady'"
+        "comment": "Polymer demo shows TypeError: Object #&lt;g> has no method 'registerWhenReady'"
       },
       {
         "project": "x-html",
@@ -677,7 +677,7 @@
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1729.3 dev-m",
         "status": "red",
-        "comment": "Polymer demo shows TypeError: Object #<g> has no method 'registerWhenReady'"
+        "comment": "Polymer demo shows TypeError: Object #&lt;g> has no method 'registerWhenReady'"
       },
       {
         "project": "PMail",
@@ -693,7 +693,7 @@
         "browser": "Chrome Canary (Web Platform features disabled)",
         "browser_version": "33.0.1734.0 canary",
         "status": "red",
-        "comment": "Polymer demo shows TypeError: Object #<g> has no method 'registerWhenReady'"
+        "comment": "Polymer demo shows TypeError: Object #&lt;g> has no method 'registerWhenReady'"
       },
       {
         "project": "PMail",
@@ -709,7 +709,7 @@
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1729.3 dev-m",
         "status": "red",
-        "comment": "Polymer demo shows TypeError: Object #<g> has no method 'registerWhenReady'"
+        "comment": "Polymer demo shows TypeError: Object #&lt;g> has no method 'registerWhenReady'"
       },
       {
         "project": "Handsontable",
@@ -741,7 +741,7 @@
         "browser": "Chrome Dev (Web Platform features disabled)",
         "browser_version": "33.0.1729.3 dev-m",
         "status": "red",
-        "comment": "Object #<g> has no method 'created' "
+        "comment": "Object #&lt;g> has no method 'created' "
       }
     ]
   }
